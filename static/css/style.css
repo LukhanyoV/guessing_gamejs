@@ -23,7 +23,7 @@ body {
     width: 100%;
 }
 
-input[type=text] {
+input[type=number] {
     height: 30px;
     width: 100%;
 }
