@@ -9,7 +9,8 @@ const r_msg = "Guesses remaining: ";
 const message = msg => {
     guesses.innerHTML = r_msg + remaining;
     output.innerHTML = msg;
-    if(msg === "Yay you won!") input.readOnly = true;
+    if(msg === "Yay you won!" || remaining === 0) input.readOnly = true;
+    if(remaining === 0 && msg !== "Yay you won!") output.innerHTML = "You lost insufficient guesses remaining!"
 };
 
 const play = () => {
